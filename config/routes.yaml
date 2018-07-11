@@ -1,0 +1,17 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+coin:
+    resource: "@CoinBundle/Resources/config/routing/coin.xml"
+main:
+    path: /
+    methods: GET
+    defaults:
+        _controller: fos_user.profile.controller:showAction
+
+
+app_lucky_number:
+    path: /test
+    controller: App\Controller\TestController::number

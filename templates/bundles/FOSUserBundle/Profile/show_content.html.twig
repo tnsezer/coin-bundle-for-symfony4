@@ -1,0 +1,30 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <td>{{ 'profile.show.username'|trans }}</td>
+                <td>{{ user.username }}</td>
+            </tr>
+            <tr>
+                <td>{{ 'profile.show.email'|trans }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <td>{{ 'profile.show.coin'|trans }}</td>
+                <td>{{ user.coin }}</td>
+            </tr>
+            <tr>
+                <td><input type="button" id="buy" value="Buy" class="btn btn-info" /></td>
+                <td><input type="text" id="buyInput" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="check" value="Check" class="btn btn-info" /></td>
+                <td><input type="text" id="checkInput" class="form-control" /></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

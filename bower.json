@@ -1,0 +1,19 @@
+{
+  "name": "bower",
+  "description": "",
+  "main": "bower",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap-sass": "^3.3.7",
+    "jwt-decode": "^2.2.0"
+  }
+}
